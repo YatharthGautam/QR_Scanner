@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+  <h2>Login with Google</h2>
+  <div id="g_id_onload"
+       data-client_id="869840812429-if1d4ee7d2lukokgl3t6seu8659r69t1.apps.googleusercontent.com"
+       data-callback="handleCredentialResponse">
+  </div>
+  <div class="g_id_signin" data-type="standard"></div>
+
+  <script>
+    function handleCredentialResponse(response) {
+      // Handle the response and store the token
+      // Redirect to select-sheet.html
+      window.location.href = 'select-sheet.html';
+    }
+  </script>
+</body>
+</html>
